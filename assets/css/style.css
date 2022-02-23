@@ -6,6 +6,7 @@
 html, body {
     width: 100%;
     font-family: "Roboto",sans-serif;
+    margin: 0 auto;
 }
 * {
     padding: 0;
@@ -75,6 +76,7 @@ div {
 /*--Réservation--*/
 
 .header__reservation {
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,7 +187,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1rem;
+    width: 3rem;
     height: 1rem;
     margin: -1.5rem 0 0 16.5rem;
 }
@@ -484,7 +486,7 @@ h3 {
 }
 .order {
     margin: 0 auto;
-    margin-left: 3.5rem;
+    margin-left: 4.5rem;
     margin-top: 4.5rem;
     width: 11.56rem;
 }
@@ -540,7 +542,7 @@ h3 {
     opacity: 0.7;
     position: fixed;
     z-index: 999;
-    animation: background 4s both;
+    animation: background 3s both;
 }
 
 .loader {
@@ -632,6 +634,7 @@ h3 {
 
 @media (min-width: 768px)
 {
+    
 .heading img {
     width: 60%;
     margin-top: 1rem;
@@ -769,5 +772,83 @@ h3 {
     display: grid;
     column-gap: 5.18rem;
     grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles pour cette Media Queries */
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem 1rem 0rem;
+}
+.fonction__btn span {
+    position: absolute;
+    left: -0.7rem;
+    top: 2rem;
+    color: #fff;
+    font-size: .87rem;
+    font-weight: 500;
+    padding: 0.28rem 0.56rem;
+    background-color: #9356dc;
+    border-radius: 1.5rem;
+}
+.fonction__btn i {
+    position: absolute;
+    color: #8d8d8d;
+    left: 2.4499999999999993rem;
+    font-size: 1.2rem;
+    top: 2.3rem;
+}
+.card {
+    position: relative;
+    margin-left: -3rem;
+    width: 115%;
+    height: 17rem;
+    margin-bottom: 1.25rem;
+    overflow: hidden;
+    border-radius: 0.65rem;
+    box-shadow: 0 0.17rem 0.6rem rgb(153 153 153 / 60%);
+}
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+.heart__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+    font-size: 1.5rem;
+    margin: -2rem 0 0 40rem;
+}
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    column-gap: 5.18rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+.heading-menu__title {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+.container .order {
+    margin: 0 auto;
+    margin-left: 16.5rem;
+    margin-top: 5.5rem;
+    width: 11.56rem;
+}
+.footer__logo {
+    margin: auto;
+    font-family: "Shrikhand",cursive;
+}
+.footer__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0.25rem;
+    margin-left: 3rem;
 }
 }
